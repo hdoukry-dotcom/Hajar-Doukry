@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  color: black;
+  text-align: center;
+}
+
+
+nav {
+  background-color: #ff03dd;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #5f370e;
+}
+
+
+.hero {
+  background-image: url("images 1/arriere.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+
+.races-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+
+.card {
+  background-color: #fff;
+  width: 260px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  color: #444;
+}
+
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+button {
+  padding: 12px 25px;
+  background-color: #ff03d5;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e6a800;
+  transform: scale(1.05);
+}
+
+
+.footer {
+  background: #fce4ec;
+  padding: 30px;
+  position: relative;
+  min-height: 160px;
+}
+
+.footer-right {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  text-align: right;
+}
+
+.footer-right h3 {
+  color: #c2185b;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #555;
+}
+
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .services,
+  .races-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+}
